@@ -1,0 +1,71 @@
+@import './colors.scss';
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: wavy;
+    color: #c9d6df;
+}
+
+body{
+    font-family: "Roboto-Light", sans-serif;
+}
+
+.txt-white{
+    color: $white;
+}
+
+.txt-lighter-blue{
+    color: $lighter-blue;
+}
+
+.txt-darker-blue{
+    color: $darker-blue;
+}
+
+.txt-beige{
+    color: $beige;
+}
+
+.txt-darker-brown{
+    color: $darker-brown;
+}
+
+.txt-lighter-brown{
+    color: $lighter-brown;
+}
+
+.bg-lighter-blue{
+    background-color: $lighter-blue;
+}
+
+.bg-darker-blue{
+    background-color: $darker-blue;
+}
+
+.roboto-bold{
+    font-family: "Roboto-Bold";
+}
+
+.roboto-regular{
+    font-family: "Roboto-Regular";
+}
+
+.text-20{
+    font-size: 20px;
+}
