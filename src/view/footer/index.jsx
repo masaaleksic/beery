@@ -17,7 +17,7 @@ export default function Footer() {
                     <br />
                     <Link className="txt-white" to="/about">About us</Link>
                     <br />
-                    <Link className="txt-white" to="/about">Blog</Link>
+                    <Link className="txt-white" to="/blogs">Blog</Link>
                     <br />
                     <Link className="txt-white" to="/about">Contact</Link>
 
