@@ -19,7 +19,7 @@ export default function Footer() {
                     <br />
                     <Link className="txt-white" to="/blogs">Blog</Link>
                     <br />
-                    <Link className="txt-white" to="/about">Contact</Link>
+                    <Link className="txt-white" to="/contact">Contact</Link>
 
                 </div>
                 <div className="col-4 display-inline txt-white ps-5">

@@ -50,6 +50,14 @@ body{
     color: $lighter-brown;
 }
 
+.bg-lighter-brown{
+    background-color: $lighter-brown;
+}
+
+.bg-beige{
+    background-color: $beige;
+}
+
 .bg-lighter-blue{
     background-color: $lighter-blue;
 }
@@ -68,4 +76,12 @@ body{
 
 .text-20{
     font-size: 20px;
+}
+
+.height-250{
+    height: 220px;
+}
+
+.height-600{
+    height: 450px;
 }
