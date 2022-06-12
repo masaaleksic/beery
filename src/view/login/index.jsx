@@ -7,6 +7,7 @@ export default function Login(){
         username: "masa",
         password: "misa"
     };
+
     const [isValidUser, setIsValidUser] = useState(true);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -14,11 +15,11 @@ export default function Login(){
         event.preventDefault();
         const username = event.target.username.value;
         const password = event.target.password.value;
-        
+
         if(username === user.username && password === user.password){
             store.dispatch(setSession({ isLoggedIn: true, isAdmin: true, username: username }));
             setIsValidUser(true);
-            setIsLoggedIn(store.getState().session.user.isLoggedIn);
+            setIsLoggedIn(store.getState().session?.user.isLoggedIn);
         }else {
             setIsValidUser(false);
         }

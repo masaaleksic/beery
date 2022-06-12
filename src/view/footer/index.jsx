@@ -5,11 +5,14 @@ import Facebook from "../../img/facebook_icon_white.png";
 import Twitter from "../../img/twitter_icon_white.png";
 import Pinterest from "../../img/pinterest_icon_white.png";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import store from "../../redux/store";
+import { setDisplayMode } from "../../redux/displayMode/actions";
 
-export default function Footer() {
+export default function Footer({isDarkMode}) {
     return (
         <>
-            <div id="footer" className="row bg-lighter-blue pb-3 pt-3">
+            <div id="footer" className={`row ${!isDarkMode ? "bg-lighter-blue" : "bg-lighter-brown"} pb-3 pt-3`}>
                 <div className="col-2">
                 </div>
                 <div className="col-4 display-inline text-end border-end pe-5">
@@ -31,7 +34,7 @@ export default function Footer() {
                 <div className="col-2 display-inline">
                 </div>
             </div>
-            <div className="row text-center bg-darker-blue txt-white">
+            <div className={`row ${!isDarkMode ? "bg-darker-blue" : "bg-darker-brown"} text-center txt-white`}>
                 <div className="col-6 text-end pe-4 my-auto">
                     © 2022 Blogeraj | All rights reserved &emsp;
                 </div>
@@ -54,3 +57,12 @@ export default function Footer() {
         </>
     );
 }
+
+const mapStateToProps = (state) => {
+    return {
+        isLoggedIn: state?.session?.user.isLoggedIn,
+        isDarkMode: state?.displayMode?.isDarkMode
+    };
+};
+
+Footer = connect(mapStateToProps)(Footer);

@@ -6,8 +6,6 @@ const initialState = {
     }
 }
 const sessionReducer = (state = initialState, action) => {
-    console.log(action.type);
-    console.log(action.payload);
     switch(action.type) {
         case "SET_SESSION":
         return {
