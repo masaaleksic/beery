@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import '../common/scss/style.scss';
@@ -24,7 +24,7 @@ export default function Header({ isLoggedIn, isDarkMode }) {
                 </div>
                 <div className="col-8 text-center text-20 my-auto">
                     <Link className="txt-white text-capitalize" to="/">Home</Link> &emsp;
-                    <Link className="txt-white" to="/blogs">Blog</Link>&emsp;
+                    <Link className="txt-white" to="/blogs">Blogs</Link>&emsp;
                     <Link className="txt-white" to="/about">About us</Link>&emsp;
                     <Link className="txt-white" to="/contact">Contact</Link>
                 </div>

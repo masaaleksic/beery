@@ -12,7 +12,7 @@ export default function Home(){
 
     useEffect(() => {
         broj1 > 2 && (document.getElementById('555').style.color = 'red');
-        broj1 > 5 && (broj1Ref.current.style.color = 'red')
+        broj1 > 5 && (broj1Ref.current.style.color = 'green')
     },[broj1]);
 
     return(

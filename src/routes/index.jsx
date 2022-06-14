@@ -5,6 +5,7 @@ import Blogs from "../view/blogs";
 import Contact from "../view/contact";
 import Home from "../view/home";
 import Login from "../view/login";
+import Blog from "../view/blog";
 
 export default function GetRoutes() {
     return (
@@ -14,7 +15,7 @@ export default function GetRoutes() {
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="login" element={<Login />} />
-            {/* <Route path="blog/:id" element={<Blog />} /> */}
+            <Route path="blog/:id" element={<Blog />} />
         </Routes>
     );
   }

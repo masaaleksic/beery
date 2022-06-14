@@ -6,13 +6,11 @@ import Twitter from "../../img/twitter_icon_white.png";
 import Pinterest from "../../img/pinterest_icon_white.png";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import store from "../../redux/store";
-import { setDisplayMode } from "../../redux/displayMode/actions";
 
 export default function Footer({isDarkMode}) {
     return (
         <>
-            <div id="footer" className={`row ${!isDarkMode ? "bg-lighter-blue" : "bg-lighter-brown"} pb-3 pt-3`}>
+            <div id="footer" className={`row ${!isDarkMode ? "bg-lighter-blue" : "bg-lighter-brown"} pb-3 pt-3 mx-0`}>
                 <div className="col-2">
                 </div>
                 <div className="col-4 display-inline text-end border-end pe-5">
@@ -20,7 +18,7 @@ export default function Footer({isDarkMode}) {
                     <br />
                     <Link className="txt-white" to="/about">About us</Link>
                     <br />
-                    <Link className="txt-white" to="/blogs">Blog</Link>
+                    <Link className="txt-white" to="/blogs">Blogs</Link>
                     <br />
                     <Link className="txt-white" to="/contact">Contact</Link>
 
@@ -34,7 +32,7 @@ export default function Footer({isDarkMode}) {
                 <div className="col-2 display-inline">
                 </div>
             </div>
-            <div className={`row ${!isDarkMode ? "bg-darker-blue" : "bg-darker-brown"} text-center txt-white`}>
+            <div className={`row ${!isDarkMode ? "bg-darker-blue" : "bg-darker-brown"} text-center txt-white mx-0`}>
                 <div className="col-6 text-end pe-4 my-auto">
                     © 2022 Blogeraj | All rights reserved &emsp;
                 </div>
