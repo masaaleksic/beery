@@ -29,7 +29,7 @@ export default function Blogs() {
                                 <div key={i} className='blog-layout mb-3  mx-auto'>
                                     <p className='h5 fw-bold'>{item.title}</p>
                                     <img className='blog-img' src={item.urlToImage} /> <br />
-                                    <a href={`blog/:${item.title}`} target={"_blank"} rel="noreferrer" className="text-start">See more...</a>
+                                    <a href={`blog/${item.title}`} rel="noreferrer" className="text-start">See more...</a>
                                 </div>
                         );
                     })
