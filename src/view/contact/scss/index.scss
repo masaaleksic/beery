@@ -1,0 +1,17 @@
+.contact-layout{
+    width: 600px;
+    height: 380px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.bg-img{
+    max-height: 350px;
+    width: 1519px;
+}
+
+.bg-img img{
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
