@@ -1,17 +1,11 @@
 .blog-layout {
-    width: 500px;
+    max-width: 500px;
     border: 1px solid black;
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 15px;    
     text-align: center;
 }
 
-.blog-title{
-    height: 60px;
-    position: relative;
-}
-
 .blog-img {
     max-width: 450px;
-    max-height: 252px;
 }

@@ -7,15 +7,15 @@ import "../common/scss/style.scss";
 import { Link } from "react-router-dom";
 import Blog from "../blog";
 
+//API KEY: 84b9262f33ef46d89909d67451264ef5
 export default function Blogs() {
     const [news, setNews] = useState(null);
 
     useEffect(() => {
-        axios.get('https://api.punkapi.com/v2/beers')
+        axios.get('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=84b9262f33ef46d89909d67451264ef5')
             .then(resp => {
-                console.log(resp);
                 if (resp.status === 200) {
-                    setNews(resp.data);
+                    setNews(resp.data.articles);
                 }
             });
     }, []);
@@ -27,10 +27,9 @@ export default function Blogs() {
                     news.map((item, i) => {
                         return (
                                 <div key={i} className='blog-layout mb-3  mx-auto'>
-                                    <p className='h5 fw-bold'>{item.name}</p>
-                                    <img className='blog-img' src={item.image_url} /> <br /> <br />
-                                    <p>{item.brewers_tips}</p> 
-                                    <a href={`blog/${item.id}`} rel="noreferrer" className="text-start">See more...</a>
+                                    <p className='h5 fw-bold'>{item.title}</p>
+                                    <img className='blog-img' src={item.urlToImage} /> <br />
+                                    <a href={`blog/${item.title}`} rel="noreferrer" className="text-start">See more...</a>
                                 </div>
                         );
                     })

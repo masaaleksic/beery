@@ -10,32 +10,32 @@ export default function Blog() {
     const [newsItem, setNewsItems] = useState(null);
 
     const url = window.location.href.split('/');
-    const id = url[url.length - 1];
+    const var1 = url[url.length - 1];
+    const title = var1.replaceAll('%20', ' ');
 
     useEffect(() => {
-        axios.get('https://api.punkapi.com/v2/beers')
+        axios.get('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=84b9262f33ef46d89909d67451264ef5')
             .then(resp => {
                 if (resp.status === 200) {
-                    setNews(resp.data);
+                    setNews(resp.data.articles);
                 }
             });
     }, []);
 
     useEffect(() => {
         news && news.forEach(element => {
-            if (element.id == id) {
+            if (element.title === title) {
                 setNewsItems(element);
             }
         })
-    }, [news])  
+    }, [news])
     return (<>
         {
             newsItem && (
                 <div className='blog-layout mb-3  mx-auto'>
-                    <p className='h5 fw-bold'>{newsItem.name}</p>
-                    <img className='blog-img' src={newsItem.image_url} /> <br />
+                    <p className='h5 fw-bold'>{newsItem.title}</p>
+                    <img className='blog-img' src={newsItem.urlToImage} /> <br />
                 </div>)
         }</>
     );
-
 }
