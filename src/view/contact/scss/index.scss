@@ -1,13 +1,17 @@
 .contact-layout{
-    width: 600px;
-    height: 380px;
+    width: 500px;
+    height: 500px;
     background-color: white;
     border: 1px solid gray;
 }
 
+.maps-frame {
+    width: 500px;
+    height: 500px;
+}
+
 .bg-img{
     max-height: 350px;
-    width: 1519px;
 }
 
 .bg-img img{
@@ -15,3 +19,21 @@
     object-fit: cover;
     width: 100%;
 }
+
+@media screen and (max-width: 720px) {
+    .bg-img{
+        display: none;
+    }
+
+    .contact-layout{
+        width: 300px;
+        max-height: 400px;
+        background-color: white;
+        border: 1px solid gray;
+    }
+    
+    .maps-frame {
+        width: 300px;
+        height: 300px;
+    }
+  }

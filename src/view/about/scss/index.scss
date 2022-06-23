@@ -8,3 +8,17 @@
 .second-div{
  background-color: #e4e4e4;   
 }
+
+.about-img {
+    max-width: 500px;
+}
+
+.about-text {
+    max-width: 900px;
+}
+
+@media screen and (max-width: 720px) {
+    .about-img {
+        max-width: 300px;
+    }
+  }

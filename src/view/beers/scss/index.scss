@@ -1,0 +1,28 @@
+.beer-layout {
+    width: 300px;
+    border-radius: 7px;
+    padding: 15px;    
+    text-align: center;
+    box-shadow: 0 3px 6px 0 rgb(0, 0, 0, 0.16);
+    position: relative;
+}
+.beer-layout:hover{
+    box-shadow: 0 0px 6px 0 rgb(0, 0, 0, 0.40);
+}
+
+.beer-title{
+    height: 60px;
+    position: relative;
+}
+
+.beer-img {
+    max-width: 450px;
+    max-height: 252px;
+}
+
+.text-bottom{
+    position: absolute;
+    bottom: 3px;
+    left: 39%;
+    cursor: pointer;
+}

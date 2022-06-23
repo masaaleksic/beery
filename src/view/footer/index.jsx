@@ -10,7 +10,7 @@ import { connect } from "react-redux";
 export default function Footer({isDarkMode}) {
     return (
         <>
-            <div id="footer" className={`row ${!isDarkMode ? "bg-lighter-blue" : "bg-lighter-brown"} pb-3 pt-3 mx-0`}>
+            <div id="footer" className={`row ${!isDarkMode ? "bg-lighter-blue" : "bg-lighter-brown"} pb-3 pt-3`}>
                 <div className="col-2">
                 </div>
                 <div className="col-4 display-inline text-end border-end pe-5">
@@ -18,23 +18,23 @@ export default function Footer({isDarkMode}) {
                     <br />
                     <Link className="txt-white" to="/about">About us</Link>
                     <br />
-                    <Link className="txt-white" to="/blogs">Blogs</Link>
+                    <Link className="txt-white" to="/beers">Beers</Link>
                     <br />
                     <Link className="txt-white" to="/contact">Contact</Link>
 
                 </div>
                 <div className="col-4 display-inline txt-white ps-5">
                     Kontakt telefon: +381 66 112233 <br />
-                    Email: blogeraj@gmail.com <br />
-                    Adresa: Ul. Mica Blogerica <br />
+                    Email: beery@gmail.com <br />
+                    Adresa: Ul. Janka Despotovića <br />
                     Novi Beograd, Srbija
                 </div>
                 <div className="col-2 display-inline">
                 </div>
             </div>
-            <div className={`row ${!isDarkMode ? "bg-darker-blue" : "bg-darker-brown"} text-center txt-white mx-0`}>
+            <div className={`row ${!isDarkMode ? "bg-darker-blue" : "bg-darker-brown"} text-center txt-white`}>
                 <div className="col-6 text-end pe-4 my-auto">
-                    © 2022 Blogeraj | All rights reserved &emsp;
+                    © 2022 Beery | All rights reserved &emsp;
                 </div>
                 <div className="col-6 text-start ps-5 my-auto">
 

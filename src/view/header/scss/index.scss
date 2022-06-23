@@ -1,10 +1,30 @@
 #header{
     .h-height{
-        height: 40px;
+        max-height: 40px;
     }
 
     .header-icon{
-        max-height: 72px;
-        max-width: 240px;
+        max-width: 90px;
     }
+}
+
+.mobile-header {
+    max-height: 40px;
+    display: none;
+}
+
+.logo-text {
+    height: 80px;
+}
+
+@media screen and (max-width: 720px) {
+    .mobile-header {
+        display: block;
+    }
+    #header {
+        display: none;
+    }
+  }
+.menu-img {
+    max-width: 30px;
 }

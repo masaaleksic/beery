@@ -1,5 +1,9 @@
 @import './colors.scss';
 @font-face {
+    font-family: 'Simpsonfont';
+    src: url('../fonts/Simpsonfont.ttf');
+}
+@font-face {
     font-family: 'Roboto-Regular';
     src: url('../fonts/Roboto-Regular.ttf');
 }
@@ -29,6 +33,9 @@ body{
     font-family: "Roboto-Light", sans-serif;
 }
 
+.font-duff {
+    font-family: "Simpsonfont", Arial, Helvetica, sans-serif;
+}
 
 .txt-white{
     color: $white;
@@ -88,6 +95,10 @@ body{
 
 .text-12{
     font-size: 12px;
+}
+
+.text-35 {
+    font-size: 35px;
 }
 
 .height-250{
