@@ -4,8 +4,7 @@ import dataSlider from './dataSlider'
 
 export default function Slider() {
 
-    const [slideIndex, setSlideIndex] = useState(1)
-
+    const [slideIndex, setSlideIndex] = useState(1);
     const nextSlide = () => {
         if (slideIndex !== dataSlider.length) {
             setSlideIndex(slideIndex + 1)
