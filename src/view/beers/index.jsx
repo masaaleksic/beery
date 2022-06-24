@@ -36,8 +36,6 @@ export default function Beers() {
                     }
                 </section>
             </div>
-
         </>
-
     );
 }
