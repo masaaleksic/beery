@@ -16,20 +16,20 @@
     src: url('../fonts/Roboto-Light.ttf');
 }
 
-a{
+a {
     color: black;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: wavy;
     color: #c9d6df;
 }
 
-body{
+body {
     font-family: "Roboto-Light", sans-serif;
 }
 
@@ -37,63 +37,63 @@ body{
     font-family: "Simpsonfont", Arial, Helvetica, sans-serif;
 }
 
-.txt-white{
+.txt-white {
     color: $white;
 }
 
-.txt-lighter-blue{
+.txt-lighter-blue {
     color: $lighter-blue;
 }
 
-.txt-darker-blue{
+.txt-darker-blue {
     color: $darker-blue;
 }
 
-.txt-beige{
+.txt-beige {
     color: $beige;
 }
 
-.txt-darker-brown{
+.txt-darker-brown {
     color: $darker-brown;
 }
 
-.txt-lighter-brown{
+.txt-lighter-brown {
     color: $lighter-brown;
 }
 
-.bg-lighter-brown{
+.bg-lighter-brown {
     background-color: $lighter-brown;
 }
 
-.bg-darker-brown{
+.bg-darker-brown {
     background-color: $darker-brown;
 }
 
-.bg-beige{
+.bg-beige {
     background-color: $beige;
 }
 
-.bg-lighter-blue{
+.bg-lighter-blue {
     background-color: $lighter-blue;
 }
 
-.bg-darker-blue{
+.bg-darker-blue {
     background-color: $darker-blue;
 }
 
-.roboto-bold{
+.roboto-bold {
     font-family: "Roboto-Bold";
 }
 
-.roboto-regular{
+.roboto-regular {
     font-family: "Roboto-Regular";
 }
 
-.text-20{
+.text-20 {
     font-size: 20px;
 }
 
-.text-12{
+.text-12 {
     font-size: 12px;
 }
 
@@ -101,10 +101,10 @@ body{
     font-size: 35px;
 }
 
-.height-250{
+.height-250 {
     max-height: 220px;
 }
 
-.height-600{
+.height-600 {
     height: 450px;
 }
