@@ -7,7 +7,6 @@ import Login from "../view/login";
 import Beers from "../view/beers";
 import Beer from "../view/beer";
 
-
 export default function GetRoutes() {
     return (
         <Routes>
