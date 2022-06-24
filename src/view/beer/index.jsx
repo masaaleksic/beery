@@ -9,7 +9,6 @@ import Config from "../../config/config";
 export default function Beer() {
     const [beers, setBeers] = useState(null);
     const [beerItem, setBeerItems] = useState(null);
-
     const url = window.location.href.split('/');
     const id = url[url.length - 1];
 
