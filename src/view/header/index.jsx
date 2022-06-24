@@ -74,5 +74,4 @@ const mapStateToProps = (state) => {
         isDarkMode: state?.displayMode?.isDarkMode
     };
 };
-
 Header = connect(mapStateToProps)(Header);
