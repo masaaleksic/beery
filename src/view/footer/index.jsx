@@ -21,7 +21,6 @@ export default function Footer({isDarkMode}) {
                     <Link className="txt-white" to="/beers">Beers</Link>
                     <br />
                     <Link className="txt-white" to="/contact">Contact</Link>
-
                 </div>
                 <div className="col-4 display-inline txt-white ps-5">
                     Kontakt telefon: +381 66 112233 <br />
