@@ -13,7 +13,7 @@ export default function Beer() {
     const id = url[url.length - 1];
 
     useEffect(() => {
-        axios.get(`${Config.api.baseUrl}/beers`)
+        axios.get('https://api.punkapi.com/v2/beers')
             .then(resp => {
                 if (resp.status === 200) {
                     setBeers(resp.data);
